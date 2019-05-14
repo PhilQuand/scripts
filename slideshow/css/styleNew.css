@@ -88,6 +88,30 @@
     margin-left: 54px;
 }
 
+.sp-selector-7, .button-label-7 {
+    margin-left: 572x;
+}
+
+.sp-selector-8, .button-label-8 {
+    margin-left: 90px;
+}
+
+.sp-selector-9, .button-label-9 {
+    margin-left: 108px;
+}
+
+.sp-selector-10, .button-label-10 {
+    margin-left: 126px;
+}
+
+.sp-selector-11, .button-label-11 {
+    margin-left: 144px;
+}
+
+.sp-selector-12, .button-label-12 {
+    margin-left: 162px;
+}
+
 .sp-arrow {
     position: absolute;
 	top: 50%;
@@ -115,7 +139,13 @@
 .sp-selector-2:checked ~ .sp-arrow.sp-a3,
 .sp-selector-3:checked ~ .sp-arrow.sp-a4,
 .sp-selector-4:checked ~ .sp-arrow.sp-a5,
-.sp-selector-5:checked ~ .sp-arrow.sp-a6 {
+.sp-selector-5:checked ~ .sp-arrow.sp-a6,
+.sp-selector-6:checked ~ .sp-arrow.sp-a7,
+.sp-selector-7:checked ~ .sp-arrow.sp-a8,
+.sp-selector-8:checked ~ .sp-arrow.sp-a9,
+.sp-selector-9:checked ~ .sp-arrow.sp-a10,
+.sp-selector-10:checked ~ .sp-arrow.sp-a11,
+.sp-selector-11:checked ~ .sp-arrow.sp-a12 {
     right: 15px;
 	display: block;
 	background-position: top right;
@@ -124,7 +154,13 @@
 .sp-selector-3:checked ~ .sp-arrow.sp-a2,
 .sp-selector-4:checked ~ .sp-arrow.sp-a3,
 .sp-selector-5:checked ~ .sp-arrow.sp-a4,
-.sp-selector-6:checked ~ .sp-arrow.sp-a5 {
+.sp-selector-6:checked ~ .sp-arrow.sp-a5,
+.sp-selector-7:checked ~ .sp-arrow.sp-a6,
+.sp-selector-8:checked ~ .sp-arrow.sp-a7,
+.sp-selector-9:checked ~ .sp-arrow.sp-a8,
+.sp-selector-10:checked ~ .sp-arrow.sp-a9,
+.sp-selector-11:checked ~ .sp-arrow.sp-a10,
+.sp-selector-12:checked ~ .sp-arrow.sp-a11 {
     left: 15px;
 	display: block;
 	background-position: top left;
@@ -176,6 +212,36 @@ input.sp-selector-6:checked ~ .sp-content {
 	background-color: #7d7f72;
 }
 
+input.sp-selector-7:checked ~ .sp-content {
+    background-position: -600px 0;
+	background-color: #7d7f72;
+}
+
+input.sp-selector-8:checked ~ .sp-content {
+    background-position: -700px 0;
+	background-color: #7d7f72;
+}
+
+input.sp-selector-9:checked ~ .sp-content {
+    background-position: -800px 0;
+	background-color: #7d7f72;
+}
+
+input.sp-selector-10:checked ~ .sp-content {
+    background-position: -900px 0;
+	background-color: #7d7f72;
+}
+
+input.sp-selector-11:checked ~ .sp-content {
+    background-position: -1000px 0;
+	background-color: #7d7f72;
+}
+
+input.sp-selector-12:checked ~ .sp-content {
+    background-position: -1100px 0;
+	background-color: #7d7f72;
+}
+
 input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {
     background-position: 0 0;
 }
@@ -198,6 +264,30 @@ input.sp-selector-5:checked ~ .sp-content .sp-parallax-bg {
 
 input.sp-selector-6:checked ~ .sp-content .sp-parallax-bg {
     background-position: -1000px 0;
+}
+
+input.sp-selector-7:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -1200px 0;
+}
+
+input.sp-selector-8:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -1400px 0;
+}
+
+input.sp-selector-9:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -1600px 0;
+}
+
+input.sp-selector-10:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -1800px 0;
+}
+
+input.sp-selector-11:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -2000px 0;
+}
+
+input.sp-selector-12:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -2200px 0;
 }
 
 .sp-slider {
@@ -270,12 +360,41 @@ input.sp-selector-6:checked ~ .sp-content .sp-slider {
     left: -500%;
 }
 
+input.sp-selector-7:checked ~ .sp-content .sp-slider {
+    left: -600%;
+}
+
+input.sp-selector-8:checked ~ .sp-content .sp-slider {
+    left: -700%;
+}
+
+input.sp-selector-9:checked ~ .sp-content .sp-slider {
+    left: -800%;
+}
+
+input.sp-selector-10:checked ~ .sp-content .sp-slider {
+    left: -900%;
+}
+
+input.sp-selector-11:checked ~ .sp-content .sp-slider {
+    left: -1000%;
+}
+
+input.sp-selector-12:checked ~ .sp-content .sp-slider {
+    left: -1100%;
+}
 input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
 input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2),
 input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),
 input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),
 input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5),
-input.sp-selector-6:checked ~ .sp-content .sp-slider > li:nth-child(6){
+input.sp-selector-6:checked ~ .sp-content .sp-slider > li:nth-child(6),
+input.sp-selector-7:checked ~ .sp-content .sp-slider > li:nth-child(7),
+input.sp-selector-8:checked ~ .sp-content .sp-slider > li:nth-child(8),
+input.sp-selector-9:checked ~ .sp-content .sp-slider > li:nth-child(9),
+input.sp-selector-10:checked ~ .sp-content .sp-slider > li:nth-child(10),
+input.sp-selector-11:checked ~ .sp-content .sp-slider > li:nth-child(11),
+input.sp-selector-12:checked ~ .sp-content .sp-slider > li:nth-child(12){
 	opacity: 1;
 }
 @media screen and (max-width: 840px){
