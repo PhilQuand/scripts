@@ -28,7 +28,7 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 		    Tourner_Carroussel();
 		};
 		
-		this.Click()=function() { 
+		this.Click=function() { 
 			if( CarousselRotation ) {
                    CarousselRotation = false;
                  } else {
