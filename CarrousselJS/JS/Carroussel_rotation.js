@@ -22,6 +22,10 @@ var Carroussel_Rotation= function(Calque,tab){
 		this.Vitesse_Changement_Images=function(Vit){
 			Diminution=Vit;
 		};
+        
+        this.Tourner_Carroussel=function(Vit){ 
+		    Tourner_Carroussel();
+		};
 		
 		var RedimensionnerImage=function (Numero,largeur){
 			CW_I[Numero].style.width=largeur +"px";	
