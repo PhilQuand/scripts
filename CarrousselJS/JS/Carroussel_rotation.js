@@ -149,7 +149,7 @@ var Carroussel_Rotation= function(Calque,tab){
 					RedimensionnerImage(ImageOrdre[3],taille_restante);
 					CW_I[ImageOrdre[3]].style.left=parseInt(CW_I[ImageOrdre[2]].style.left)+parseInt(CW_I[ImageOrdre[2]].style.width)+"px";	
 				}
-				DivPrincipale.setAttribute("data-img", CW_I[ImageOrdre[0]].src)
+				DivPrincipale.setAttribute("data-img", CW_I[ImageOrdre[3]].src)
 				if( CarousselRotation ) setTimeout(function(){Tourner_Carroussel();},Vitesse)
 				
 		};
