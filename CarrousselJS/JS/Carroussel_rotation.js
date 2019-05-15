@@ -1,5 +1,6 @@
-var Carroussel_Rotation= function(Calque,tab){
+var Carroussel_Rotation= function(Calque,ImgOne,tab){
 		var DivPrincipale=Calque;
+		var ImgPrincipale=ImgOne;
 		var Taille_Totale=parseInt(Calque.offsetWidth);
 		var Taille_Max=Taille_Totale/2;
 		var ImageOrdre=new Array();
@@ -153,8 +154,8 @@ var Carroussel_Rotation= function(Calque,tab){
 				if( CarousselRotation ) {
 				   setTimeout(function(){Tourner_Carroussel();},Vitesse);
 				} else {
-                   var boite = document.getElementById("imgPhotos"); 
-                   boite.src = CW_I[ImageOrdre[3]].src;
+                   //var boite = document.getElementById("imgPhotos"); 
+                   ImgPrincipale.src = CW_I[ImageOrdre[3]].src;
 				}
 				
 		};
