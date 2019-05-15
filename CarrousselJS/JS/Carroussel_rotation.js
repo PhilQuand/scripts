@@ -146,7 +146,7 @@ var Carroussel_Rotation= function(Calque,tab){
 					CW_I[ImageOrdre[3]].style.left=parseInt(CW_I[ImageOrdre[2]].style.left)+parseInt(CW_I[ImageOrdre[2]].style.width)+"px";	
 				}
 				DivPrincipale.setAttribute("data-img", CW_I[ImageOrdre[0]].src)
-				if(Vitesse > 0 ) setTimeout(function(){Tourner_Carroussel();},Vitesse)
+				if( CarousselRotation ) setTimeout(function(){Tourner_Carroussel();},Vitesse)
 				
 		};
 			
@@ -174,6 +174,4 @@ var Carroussel_Rotation= function(Calque,tab){
 		
 	this.Carousel();
 
-	DivPrincipale.addEventListener("click", stopCarrousel(), false);
-	function stopCarrousel() {alert('OK...'); Vitesse=0;}
 }
