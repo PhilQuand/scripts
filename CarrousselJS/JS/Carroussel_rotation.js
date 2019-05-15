@@ -175,5 +175,5 @@ var Carroussel_Rotation= function(Calque,tab){
 	this.Carousel();
 
 	DivPrincipale.addEventListener("click", stopCarrousel(), false);
-	function stopCarrousel() {Vitesse=0;}
+	function stopCarrousel() {alert('OK...'); Vitesse=0;}
 }
