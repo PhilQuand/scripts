@@ -112,7 +112,7 @@ var Carroussel_Rotation= function(Calque,tab){
 		};
 			
 			var Tourner_Carroussel=function(){
-				DivPrincipale.setAttribute("data-img", CW_I[ImageOrdre[0]].src)
+				DivPrincipale.setAttribute("data-img", CW_I[ImageOrdre[1]].src)
 				//on diminu l'image de gauche
 				if((parseInt(CW_I[ImageOrdre[0]].style.width)-(1.5*Diminution))>10){
 					RedimensionnerImage(ImageOrdre[0],parseInt(CW_I[ImageOrdre[0]].style.width)-(1.5*Diminution));
