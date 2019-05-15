@@ -154,7 +154,7 @@ var Carroussel_Rotation= function(Calque,tab){
 				   setTimeout(function(){Tourner_Carroussel();},Vitesse);
 				} else {
                    var boite = document.getElementById("imgPhotos"); 
-                   boite.src = CW_I[ImageOrdre[2]].src;
+                   boite.src = CW_I[ImageOrdre[3]].src;
 				}
 				
 		};
