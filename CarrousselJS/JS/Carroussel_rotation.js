@@ -112,7 +112,6 @@ var Carroussel_Rotation= function(Calque,tab){
 		};
 			
 			var Tourner_Carroussel=function(){
-				DivPrincipale.setAttribute("data-img", CW_I[ImageOrdre[3]].src)
 				//on diminu l'image de gauche
 				if((parseInt(CW_I[ImageOrdre[0]].style.width)-(1.5*Diminution))>10){
 					RedimensionnerImage(ImageOrdre[0],parseInt(CW_I[ImageOrdre[0]].style.width)-(1.5*Diminution));
@@ -150,7 +149,13 @@ var Carroussel_Rotation= function(Calque,tab){
 					RedimensionnerImage(ImageOrdre[3],taille_restante);
 					CW_I[ImageOrdre[3]].style.left=parseInt(CW_I[ImageOrdre[2]].style.left)+parseInt(CW_I[ImageOrdre[2]].style.width)+"px";	
 				}
-				if( CarousselRotation ) setTimeout(function(){Tourner_Carroussel();},Vitesse)
+
+				if( CarousselRotation ) {
+				   setTimeout(function(){Tourner_Carroussel();},Vitesse);
+				} else {
+                   var boite = document.getElementById("imgPhotos"); 
+                   boite.src = CW_I[ImageOrdre[2]].src;
+				}
 				
 		};
 			
