@@ -28,6 +28,17 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 		    Tourner_Carroussel();
 		};
 		
+		this.Click()=function() { 
+			if( CarousselRotation ) {
+                   CarousselRotation = false;
+                 } else {
+                   CarousselRotation = true;
+                   Tourner_Carroussel();
+                 }
+                 /*var texte = image.getAttribute('alt');
+			      legende.textContent = texte;*/ 
+		};
+
 		var RedimensionnerImage=function (Numero,largeur){
 			CW_I[Numero].style.width=largeur +"px";	
 			CW_I[Numero].style.height=parseInt((largeur/(C_Pre_Img[Numero].width))*C_Pre_Img[Numero].height) +"px";	
@@ -154,7 +165,6 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 				if( CarousselRotation ) {
 				   setTimeout(function(){Tourner_Carroussel();},Vitesse);
 				} else {
-                   //var boite = document.getElementById("imgPhotos"); 
                    ImgPrincipale.src = CW_I[ImageOrdre[3]].src;
 				}
 				
