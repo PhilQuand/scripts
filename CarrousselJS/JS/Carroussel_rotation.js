@@ -23,7 +23,7 @@ var Carroussel_Rotation= function(Calque,tab){
 			Diminution=Vit;
 		};
         
-        this.Tourner_Carroussel=function(Vit){ 
+        this.Tourner_Carroussel=function(){ 
 		    Tourner_Carroussel();
 		};
 		
