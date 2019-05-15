@@ -1,6 +1,7 @@
 var Carroussel_Rotation= function(Calque,ImgOne,tab){
 		var DivPrincipale=Calque;
 		var ImgPrincipale=ImgOne;
+		var CarousselRotation = true;
 		var Taille_Totale=parseInt(Calque.offsetWidth);
 		var Taille_Max=Taille_Totale/2;
 		var ImageOrdre=new Array();
