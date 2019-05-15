@@ -74,7 +74,7 @@ var Carroussel_Rotation= function(Calque,tab){
 			
 				CW_I[i]=document.createElement("img");
 				CW_I[i].src=C_Pre_Img[i].src;
-				CW_I[i].onclick='afficher(this)';
+				CW_I[i].onclick="alert('Hello !');";
 						
 						
 				DivPrincipale.appendChild(CW_I[i]);	
