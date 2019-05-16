@@ -30,11 +30,11 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 		    Tourner_Carroussel();
 		};
 		
-		this.Click=function() { 
+		this.Click=function(image) { 
 			if( CarousselRotation ) {
                    CarousselRotation = false;
                    //ImgPrincipale.src = ImgPrincipaleSrc;
-                   ImgPrincipale.src = this.src;
+                   ImgPrincipale.src = image.src;
                  } else {
                    CarousselRotation = true;
                    Tourner_Carroussel();
@@ -95,7 +95,7 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 				CW_I[i]=document.createElement("img");
 				CW_I[i].src=C_Pre_Img[i].src;
 				//CW_I[i].onclick=function() {alert('Hello !');}
-				CW_I[i].setAttribute("onclick", "javascript:Caroussel.Click(); return false;")
+				CW_I[i].setAttribute("onclick", "javascript:Caroussel.Click(this); return false;")
 						
 						
 				DivPrincipale.appendChild(CW_I[i]);	
