@@ -12,6 +12,7 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 		var Debut;
 		var Diminution=5;
 		var Vitesse=50;
+		var ImgPrincipaleSrc;
 		
 		var Ajout_Modif=0;
 		var Demande_Modif=0;
@@ -32,6 +33,7 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 		this.Click=function() { 
 			if( CarousselRotation ) {
                    CarousselRotation = false;
+                   ImgPrincipale.src = ImgPrincipaleSrc;
                  } else {
                    CarousselRotation = true;
                    Tourner_Carroussel();
@@ -91,7 +93,7 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 			
 				CW_I[i]=document.createElement("img");
 				CW_I[i].src=C_Pre_Img[i].src;
-				//CW_I[i].onclick="alert('Hello !');";
+				CW_I[i].onclick="alert('Hello !');";
 						
 						
 				DivPrincipale.appendChild(CW_I[i]);	
@@ -125,6 +127,7 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 		};
 			
 			var Tourner_Carroussel=function(){
+				if( !CarousselRotation ) return;
 				//on diminu l'image de gauche
 				if((parseInt(CW_I[ImageOrdre[0]].style.width)-(1.5*Diminution))>10){
 					RedimensionnerImage(ImageOrdre[0],parseInt(CW_I[ImageOrdre[0]].style.width)-(1.5*Diminution));
@@ -163,11 +166,8 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 					CW_I[ImageOrdre[3]].style.left=parseInt(CW_I[ImageOrdre[2]].style.left)+parseInt(CW_I[ImageOrdre[2]].style.width)+"px";	
 				}
 
-				if( CarousselRotation ) {
-				   setTimeout(function(){Tourner_Carroussel();},Vitesse);
-				} else {
-                   ImgPrincipale.src = CW_I[ImageOrdre[3]].src;
-				}
+                ImgPrincipaleSrc = CW_I[ImageOrdre[3]].src;
+				//setTimeout(function(){Tourner_Carroussel();},Vitesse);
 				
 		};
 			
