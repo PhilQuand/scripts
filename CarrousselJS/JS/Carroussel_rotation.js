@@ -12,7 +12,6 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 		var Debut;
 		var Diminution=5;
 		var Vitesse=50;
-		var ImgPrincipaleSrc;
 		
 		var Ajout_Modif=0;
 		var Demande_Modif=0;
@@ -33,7 +32,6 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 		this.Click=function(image) { 
 			if( CarousselRotation ) {
                    CarousselRotation = false;
-                   //ImgPrincipale.src = ImgPrincipaleSrc;
                    ImgPrincipale.src = image.src;
                  } else {
                    CarousselRotation = true;
@@ -168,8 +166,7 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 					CW_I[ImageOrdre[3]].style.left=parseInt(CW_I[ImageOrdre[2]].style.left)+parseInt(CW_I[ImageOrdre[2]].style.width)+"px";	
 				}
 
-                ImgPrincipaleSrc = CW_I[ImageOrdre[3]].src;
-				//setTimeout(function(){Tourner_Carroussel();},Vitesse);
+				setTimeout(function(){Tourner_Carroussel();},Vitesse);
 				
 		};
 			
