@@ -94,7 +94,7 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 				CW_I[i]=document.createElement("img");
 				CW_I[i].src=C_Pre_Img[i].src;
 				//CW_I[i].onclick=function() {alert('Hello !');}
-				CW_I[i].Attributes.Add("onclick", "javascript:alert('Hello'); return false;")
+				CW_I[i].setAttribute("onclick", "javascript:alert('Hello'); return false;")
 						
 						
 				DivPrincipale.appendChild(CW_I[i]);	
