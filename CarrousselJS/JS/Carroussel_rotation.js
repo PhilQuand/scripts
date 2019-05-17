@@ -30,9 +30,15 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 		};
 		
 		this.Click=function(image) { 
+                 ImgPrincipale.src = image.src;
+                 /*var texte = image.getAttribute('alt');
+			      legende.textContent = texte;*/ 
+		};
+
+		this.mouseOver=function(image) { 
 			if( CarousselRotation ) {
                    CarousselRotation = false;
-                   ImgPrincipale.src = image.src;
+                   //ImgPrincipale.src = image.src;
                  } else {
                    CarousselRotation = true;
                    Tourner_Carroussel();
@@ -94,6 +100,7 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 				CW_I[i].src=C_Pre_Img[i].src;
 				//CW_I[i].onclick=function() {alert('Hello !');}
 				CW_I[i].setAttribute("onclick", "javascript:Caroussel.Click(this); return false;")
+				CW_I[i].setAttribute("onmouseover", "javascript:Caroussel.mouseOver(this); return false;")
 						
 						
 				DivPrincipale.appendChild(CW_I[i]);	
