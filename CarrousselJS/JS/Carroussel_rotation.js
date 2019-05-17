@@ -127,6 +127,8 @@ var Carroussel_Rotation= function(Calque,tab,ImgOne){
 				ImageOrdre[i]=i;
 			}
 					
+            if (typeof ImgPrincipale !== 'undefined') ImgPrincipale.src = CW_I[0].src;
+            
 			Tourner_Carroussel();
 				
 		};
