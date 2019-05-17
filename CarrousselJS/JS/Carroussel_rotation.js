@@ -36,15 +36,12 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 		};
 
 		this.mouseOver=function(image) { 
-			if( CarousselRotation ) {
                    CarousselRotation = false;
-                   //ImgPrincipale.src = image.src;
-                 } else {
+		};
+
+		this.mouseOut=function(image) { 
                    CarousselRotation = true;
                    Tourner_Carroussel();
-                 }
-                 /*var texte = image.getAttribute('alt');
-			      legende.textContent = texte;*/ 
 		};
 
 		var RedimensionnerImage=function (Numero,largeur){
@@ -101,6 +98,7 @@ var Carroussel_Rotation= function(Calque,ImgOne,tab){
 				//CW_I[i].onclick=function() {alert('Hello !');}
 				CW_I[i].setAttribute("onclick", "javascript:Caroussel.Click(this); return false;")
 				CW_I[i].setAttribute("onmouseover", "javascript:Caroussel.mouseOver(this); return false;")
+				CW_I[i].setAttribute("onmouseout", "javascript:Caroussel.mouseOut(this); return false;")
 						
 						
 				DivPrincipale.appendChild(CW_I[i]);	
