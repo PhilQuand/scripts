@@ -30,7 +30,7 @@ var Carroussel_Rotation= function(Calque,tab,ImgOne){
 		};
 		
 		this.Click=function(image) { 
-                 ImgPrincipale.src = image.src;
+                 if (typeof ImgPrincipale !== 'undefined') ImgPrincipale.src = image.src;
                  /*var texte = image.getAttribute('alt');
 			      legende.textContent = texte;*/ 
 		};
