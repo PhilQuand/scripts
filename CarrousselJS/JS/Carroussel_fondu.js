@@ -110,7 +110,7 @@ var Carroussel_Fondu= function(Calque,tab){
 				changeOpac(C_Pre_Img[Cible],0);
 				LastDiminution=1;
 				Opacite=0;
-				setTimeout(function(){Dissoudre_Image();},100);
+				setTimeout(function(){Dissoudre_Image();},50);
 				
 		};
 		
@@ -143,7 +143,7 @@ var Carroussel_Fondu= function(Calque,tab){
 						LastDiminution=0;
 					}
 					//augmentation
-					setTimeout(function(){Dissoudre_Image();},100);
+					setTimeout(function(){Dissoudre_Image();},50);
 				}
 		};
 	/*--------------------------------------------------------------------
