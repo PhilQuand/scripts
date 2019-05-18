@@ -104,7 +104,7 @@ function coverflowimages(options){
 
 }
 
-//// Initialization code ////////////////
+///////// Initialization code ////////////////
 
 /*coverflowimages({
 	coverid: 'coverflow1',
