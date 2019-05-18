@@ -104,20 +104,6 @@ function coverflowimages(options){
 
 }
 
-//////* #### CSS that's applied when the window/device width is 860px or less #### */
-@media screen and (max-width: 860px){
-.wrap{
-max-width: 840px;
-}
-}
-
-/* #### CSS that's applied when the window/device width is 480px or less #### */
-@media screen and (max-width: 480px){
-.wrap{
-max-width: 460px;
-}
-}
-
 //// Initialization code ////////////////
 
 /*coverflowimages({
