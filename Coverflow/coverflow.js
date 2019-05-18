@@ -106,7 +106,7 @@ function coverflowimages(options){
 
 ///////// Initialization code ////////////////
 
-coverflowimages({
+/*coverflowimages({
 	coverid: 'coverflow1',
 	images: [
 						['angelinasmall.jpg', 'angelina.jpg', 'Angelina Jolie, is an American actress and filmmaker, and an Academy Award winner'],
@@ -115,4 +115,4 @@ coverflowimages({
 						['haydensmall.jpg', 'hayden.jpg', 'Hayden Panettiere is a native of New York, and first appeared in a commercial at the age of 11 months.'],
 						['ashleysmall.jpg', 'ashley.jpg', 'Ashley was born in Granada Hills, California. She is the daughter of Naomi Judd, a country music singer and motivational speaker'] // <-- no comma after last image
 					] // <-- no comma after last option
-})
+})*/
