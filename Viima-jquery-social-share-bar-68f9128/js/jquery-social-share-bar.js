@@ -122,7 +122,7 @@
         var pdfRef = document.getElementById('pdf-ref');
         if( pdfRef !== null ) {
           return '<li class="' + props.provider + '">' +
-            '<a href="#" title="pdf version" id="pdf-icon" style="visibility: hidden;" onclick="return goToPdf()">' +
+            '<a href="#" title="pdf version" id="pdf-icon" onclick="return goToPdf()">' +
             '<i class="' + iconClasses[props.provider] + '"></i>' +
             '</a>' +
             '</li>';
