@@ -150,7 +150,7 @@
 
 })(jQuery, window);
 
-var pdfRef = document.getElementById('pdf-ref'');
+var pdfRef = document.getElementById('pdf-ref');
 if( pdfRef !== null ) {
   var pdfIcon = document.getElementById('pdf-icon');
   pdfIcon.style.visibility='visible';
