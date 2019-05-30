@@ -157,6 +157,8 @@
     pdfIcon.style.visibility='visible';
   }*/
 
+})(jQuery, window);
+
   function goToPdf() {
     var pdfRef = document.getElementById('pdf-ref');
     if( pdfRef !== null ) {
@@ -164,6 +166,3 @@
     }
     return false;
   }
-
-})(jQuery, window);
-
