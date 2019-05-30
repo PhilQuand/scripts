@@ -124,6 +124,12 @@
           '<i class="' + iconClasses[props.provider] + '"></i>' +
           '</a>' +
           '</li>';
+      } else if( props.provider === 'facebook') {
+        return '<li class="' + props.provider + '">' +
+          '<a href="#" title="facebook share" onclick="fbSummarize(); return false;">' +
+          '<i class="' + iconClasses[props.provider] + '"></i>' +
+          '</a>' +
+          '</li>';
       } else {
         return '<li class="' + props.provider + '">' +
         '<a href="#" data-href="' + props.href + '" title="Share this page ' + (props.provider === 'email' ? 'via ' : 'on ') + providerName + '" class="' + props.itemTriggerClass + ' ' + props.provider + '">' +
