@@ -148,18 +148,20 @@
 
   $.fn.share.settings = {};
 
-})(jQuery, window);
-
-var pdfRef = document.getElementById('pdf-ref');
-if( pdfRef !== null ) {
-  var pdfIcon = document.getElementById('pdf-icon');
-  pdfIcon.style.visibility='visible';
-  //pdfIcon.href = pdfRef.href;
-}
-function goToPdf() {
   var pdfRef = document.getElementById('pdf-ref');
   if( pdfRef !== null ) {
-    window.location.href = pdfRef.href;
+    var pdfIcon = document.getElementById('pdf-icon');
+    pdfIcon.style.visibility='visible';
+    //pdfIcon.href = pdfRef.href;
   }
-  return false;
-}
+
+  function goToPdf() {
+    var pdfRef = document.getElementById('pdf-ref');
+    if( pdfRef !== null ) {
+      window.location.href = pdfRef.href;
+    }
+    return false;
+  }
+
+})(jQuery, window);
+
