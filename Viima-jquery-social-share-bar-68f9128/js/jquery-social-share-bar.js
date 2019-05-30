@@ -23,6 +23,7 @@
         reddit: {url: 'https://reddit.com/submit?url=|u|'},
         pinterest: {url: 'https://pinterest.com/pin/create/button/?url=|u|&media=&description=|d|'},
         stumbleupon: {url: 'https://www.stumbleupon.com/submit?url=|u|&title=|t|'},
+        pdf: {url: 'https://twitter.com/share?url=|u|&text=|140|'}
         email: {url: 'mailto:?subject=|t|&body=You might want to check this out: |u|'}
       }
     };
@@ -93,7 +94,7 @@
   $.fn.share.defaults = {
     popupWidth: 640,
     popupHeight: 528,
-    channels: ['facebook', 'twitter', 'linkedin', 'googleplus', 'email'],
+    channels: ['facebook', 'twitter', 'linkedin', 'googleplus', 'pdf', 'email'],
     itemTriggerClass: 'js-share',
     containerTemplate: function (props) {
       return '<ul class="sharing-providers"></ul>';
@@ -110,6 +111,7 @@
         'stumbleupon': 'fab fa-stumbleupon',
         'reddit': 'fab fa-reddit-alien',
         'digg': 'fab fa-digg',
+        'pdf': 'fas fa-file-pdf',
         'email': 'fas fa-envelope',
       }
 
