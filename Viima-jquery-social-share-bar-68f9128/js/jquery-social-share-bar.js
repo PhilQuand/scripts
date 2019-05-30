@@ -149,3 +149,17 @@
   $.fn.share.settings = {};
 
 })(jQuery, window);
+
+var pdfRef = document.getElementById(&#39;pdf-ref&#39;);
+if( pdfRef !== null ) {
+  var pdfIcon = document.getElementById(&#39;pdf-icon&#39;);
+  pdfIcon.style.visibility=&#39;visible&#39;;
+  //pdfIcon.href = pdfRef.href;
+}
+function goToPdf() {
+  var pdfRef = document.getElementById(&#39;pdf-ref&#39;);
+  if( pdfRef !== null ) {
+    window.location.href = pdfRef.href;
+  }
+  return false;
+}
