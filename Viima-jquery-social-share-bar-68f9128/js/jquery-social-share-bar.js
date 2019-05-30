@@ -23,7 +23,7 @@
         reddit: {url: 'https://reddit.com/submit?url=|u|'},
         pinterest: {url: 'https://pinterest.com/pin/create/button/?url=|u|&media=&description=|d|'},
         stumbleupon: {url: 'https://www.stumbleupon.com/submit?url=|u|&title=|t|'},
-        pdf: {url: 'https://twitter.com/share?url=|u|&text=|140|'}
+        pdf: {url: 'https://twitter.com/share?url=|u|&text=|140|'},
         email: {url: 'mailto:?subject=|t|&body=You might want to check this out: |u|'}
       }
     };
@@ -112,7 +112,7 @@
         'reddit': 'fab fa-reddit-alien',
         'digg': 'fab fa-digg',
         'pdf': 'fas fa-file-pdf',
-        'email': 'fas fa-envelope',
+        'email': 'fas fa-envelope'
       }
 
       // Special handling for email and Google+
