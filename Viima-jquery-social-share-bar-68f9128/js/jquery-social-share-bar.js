@@ -118,16 +118,16 @@
       // Special handling for email and Google+
       var providerName = props.provider === 'email' ? 'email' : props.provider === 'googleplus' ? 'Google+' : props.provider.charAt(0).toUpperCase() + props.provider.slice(1);
 
-      /*return '<li class="' + props.provider + '">' +
-        '<a href="#" data-href="' + props.href + '" title="Share this page ' + (props.provider === 'email' ? 'via ' : 'on ') + providerName + '" class=' + props.itemTriggerClass + ' ' + props.provider + '" id="pdf-icon" onclick="return goToPdf()">' +
-        '<i class="' + iconClasses[props.provider] + '"></i>' +
-        '</a>' +
-        '</li>';*/
       return '<li class="' + props.provider + '">' +
-        '<a href="#" data-href="' + props.href + '" title="Share this page ' + (props.provider === 'email' ? 'via ' : 'on ') + providerName + '" class="' + props.itemTriggerClass + ' ' + props.provider + '">' +
+        '<a href="#" data-href="' + props.href + '" title="Share this page ' + (props.provider === 'email' ? 'via ' : 'on ') + providerName + '" class="' + props.itemTriggerClass + ' ' + props.provider + '" id="pdf-icon" onclick="return goToPdf()">' +
         '<i class="' + iconClasses[props.provider] + '"></i>' +
         '</a>' +
         '</li>';
+      /*return '<li class="' + props.provider + '">' +
+        '<a href="#" data-href="' + props.href + '" title="Share this page ' + (props.provider === 'email' ? 'via ' : 'on ') + providerName + '" class="' + props.itemTriggerClass + ' ' + props.provider + '">' +
+        '<i class="' + iconClasses[props.provider] + '"></i>' +
+        '</a>' +
+        '</li>';*/
     }
   };
 
