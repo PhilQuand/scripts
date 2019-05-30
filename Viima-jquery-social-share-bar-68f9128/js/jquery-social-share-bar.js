@@ -130,6 +130,12 @@
           '<i class="' + iconClasses[props.provider] + '"></i>' +
           '</a>' +
           '</li>';
+      } else if( props.provider === 'email') {
+        return '<li class="' + props.provider + '">' +
+          '<a href="' + props.href + '" title="Share this page ' + (props.provider === 'email' ? 'via ' : 'on ') + providerName + '" class="' + props.itemTriggerClass + ' ' + props.provider + '">' +
+          '<i class="' + iconClasses[props.provider] + '"></i>' +
+          '</a>' +
+          '</li>';
       } else {
         return '<li class="' + props.provider + '">' +
         '<a href="#" data-href="' + props.href + '" title="Share this page ' + (props.provider === 'email' ? 'via ' : 'on ') + providerName + '" class="' + props.itemTriggerClass + ' ' + props.provider + '">' +
