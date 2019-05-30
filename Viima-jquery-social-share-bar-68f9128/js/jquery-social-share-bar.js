@@ -119,11 +119,14 @@
       var providerName = props.provider === 'email' ? 'email' : props.provider === 'googleplus' ? 'Google+' : props.provider.charAt(0).toUpperCase() + props.provider.slice(1);
 
       if( props.provider === 'pdf') {
-        return '<li class="' + props.provider + '">' +
-          '<a href="#" title="pdf version" id="pdf-icon" style="visibility: hidden;" onclick="return goToPdf()">' +
-          '<i class="' + iconClasses[props.provider] + '"></i>' +
-          '</a>' +
-          '</li>';
+        var pdfRef = document.getElementById('pdf-ref');
+        if( pdfRef !== null ) {
+          return '<li class="' + props.provider + '">' +
+            '<a href="#" title="pdf version" id="pdf-icon" style="visibility: hidden;" onclick="return goToPdf()">' +
+            '<i class="' + iconClasses[props.provider] + '"></i>' +
+            '</a>' +
+            '</li>';
+        }
       } else if( props.provider === 'facebook') {
         return '<li class="' + props.provider + '">' +
           '<a href="#" title="Share this page ' + (props.provider === 'email' ? 'via ' : 'on ') + providerName + '" onclick="fbSummarize(); return false;">' +
@@ -148,12 +151,11 @@
 
   $.fn.share.settings = {};
 
-  var pdfRef = document.getElementById('pdf-ref');
+  /*var pdfRef = document.getElementById('pdf-ref');
   if( pdfRef !== null ) {
     var pdfIcon = document.getElementById('pdf-icon');
     pdfIcon.style.visibility='visible';
-    //pdfIcon.href = pdfRef.href;
-  }
+  }*/
 
   function goToPdf() {
     var pdfRef = document.getElementById('pdf-ref');
