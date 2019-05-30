@@ -23,7 +23,7 @@
         reddit: {url: 'https://reddit.com/submit?url=|u|'},
         pinterest: {url: 'https://pinterest.com/pin/create/button/?url=|u|&media=&description=|d|'},
         stumbleupon: {url: 'https://www.stumbleupon.com/submit?url=|u|&title=|t|'},
-        pdf: {url: '&quot;javascript:goToPdf();&quot;'},
+        pdf: {url: ''},
         email: {url: 'mailto:?subject=|t|&body=You might want to check this out: |u|'}
       }
     };
@@ -118,19 +118,19 @@
       // Special handling for email and Google+
       var providerName = props.provider === 'email' ? 'email' : props.provider === 'googleplus' ? 'Google+' : props.provider.charAt(0).toUpperCase() + props.provider.slice(1);
 
-      /*if( props.provider === 'pdf') {
+      if( props.provider === 'pdf') {
         return '<li class="' + props.provider + '">' +
           '<a href="#" title="pdf version" id="pdf-icon" onclick="return goToPdf()">' +
           '<i class="' + iconClasses[props.provider] + '"></i>' +
           '</a>' +
           '</li>';
-      } else {*/
+      } else {
         return '<li class="' + props.provider + '">' +
         '<a href="#" data-href="' + props.href + '" title="Share this page ' + (props.provider === 'email' ? 'via ' : 'on ') + providerName + '" class="' + props.itemTriggerClass + ' ' + props.provider + '">' +
         '<i class="' + iconClasses[props.provider] + '"></i>' +
         '</a>' +
         '</li>';
-      //}
+      }
     }
   };
 
