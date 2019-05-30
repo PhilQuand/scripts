@@ -120,7 +120,7 @@
 
       if( props.provider === 'pdf') {
         return '<li class="' + props.provider + '">' +
-          '<a href="#" title="pdf version" id="pdf-icon" onclick="return goToPdf()">' +
+          '<a href="#" title="pdf version" id="pdf-icon" style="visibility: hidden;" onclick="return goToPdf()">' +
           '<i class="' + iconClasses[props.provider] + '"></i>' +
           '</a>' +
           '</li>';
@@ -150,14 +150,14 @@
 
 })(jQuery, window);
 
-var pdfRef = document.getElementById(&#39;pdf-ref&#39;);
+var pdfRef = document.getElementById('pdf-ref'');
 if( pdfRef !== null ) {
-  var pdfIcon = document.getElementById(&#39;pdf-icon&#39;);
-  pdfIcon.style.visibility=&#39;visible&#39;;
+  var pdfIcon = document.getElementById('pdf-icon');
+  pdfIcon.style.visibility='visible';
   //pdfIcon.href = pdfRef.href;
 }
 function goToPdf() {
-  var pdfRef = document.getElementById(&#39;pdf-ref&#39;);
+  var pdfRef = document.getElementById('pdf-ref');
   if( pdfRef !== null ) {
     window.location.href = pdfRef.href;
   }
